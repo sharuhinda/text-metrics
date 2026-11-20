@@ -1,0 +1,3 @@
+file,perplexity,lexical_token_count,lexical_vocabulary_size,lexical_entropy_bits,effective_vocabulary_size
+animals.txt,103.30179797445568,8,5,2.25,4.756828460010884
+nested/research.txt,379.80996653970885,8,8,3.0,8.0
