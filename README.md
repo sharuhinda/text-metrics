@@ -5,7 +5,7 @@ Batch scoring for English `.txt` files:
 - **Perplexity (PPL)** from Hugging Face [`distilgpt2`](https://huggingface.co/distilgpt2), a compact 82M-parameter causal English model.
 - **Unconditional lexical entropy** in bits over **Stanza lemmas**, after removing punctuation, numeric tokens, and a fixed built-in English stop-word list.
 
-`distilgpt2` is deliberately CPU-friendly enough for this host (no GPU detected; 3.8 GiB RAM): its checkpoint is roughly 330 MB, while full GPT-2-class models would impose needless memory and latency costs. Scoring is explicitly CPU-only and uses one Torch thread by default so it does not monopolize the machine. It is useful for *within-protocol comparisons*, not an absolute quality score.
+`distilgpt2` is deliberately CPU-friendly enough: its checkpoint is roughly 330 MB, while full GPT-2-class models would impose needless memory and latency costs. Scoring is explicitly CPU-only and uses one Torch thread by default so it does not monopolize the machine. It is useful for *within-protocol comparisons*, not an absolute quality score.
 
 ## Install
 
